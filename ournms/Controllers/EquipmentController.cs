@@ -1,8 +1,8 @@
-using Microsoft.EntityFrameworkCore;
+using System.Data.Entity;
 using System.Security.Cryptography;
 using Microsoft.AspNetCore.Mvc;
-using ournms.Data;
 using ournms.Model;
+using ournms.Persistence;
 
 namespace ournms.Controllers;
 
@@ -20,10 +20,7 @@ public class EquipmentController(AppDbContext context) : Controller
     [HttpPost]
     public async Task<Boolean> CreateEquipment()
     {
-        Equipment equipment = new();
-        equipment.Name = "Equipo mandarina";
-        equipment.Id = RandomNumberGenerator.GetInt32(0, 10000);
-        equipment.IP = RandomNumberGenerator.GetInt32(0, 10000).ToString();
+        Equipment equipment = new(RandomNumberGenerator.GetInt32(0, 10000), "Equipo mandarina", RandomNumberGenerator.GetInt32(0, 10000).ToString());
         context.Equipment.Add(equipment);
         await context.SaveChangesAsync();
         return true;
