@@ -9,9 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74745e69-eda6-4b19-96ae-719425ac176b" name="Changes" comment="First Commit postgres">
+    <list default="true" id="74745e69-eda6-4b19-96ae-719425ac176b" name="Changes" comment="Avance equipment entity">
+      <change afterPath="$PROJECT_DIR$/ournms/Entities/BaseEntity.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ournms/Repositories/Interfaces/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ournms/.idea/sqldialects.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ournms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ournms/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ournms/Controllers/EquipmentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Controllers/EquipmentController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ournms/Controllers/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Controllers/Test.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ournms/Model/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Entities/Equipment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ournms/Persistence/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Persistence/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ournms/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ournms/Sql/DB.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ournms/ournms.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/ournms.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +67,7 @@
     "HTTP Request.ournms | #3.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/rraul/RiderProjects/ournms",
+    "last_opened_file_path": "/home/rraul/Downloads/netResources/eShopOnWeb-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -145,7 +154,7 @@
       <workItem from="1720261782011" duration="311000" />
       <workItem from="1720262802127" duration="1277000" />
       <workItem from="1723571482941" duration="1220000" />
-      <workItem from="1725697745365" duration="4821000" />
+      <workItem from="1725697745365" duration="11052000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit postgres">
       <option name="closed" value="true" />
@@ -155,7 +164,15 @@
       <option name="project" value="LOCAL" />
       <updated>1725701112877</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Avance equipment entity">
+      <option name="closed" value="true" />
+      <created>1725704067454</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725704067455</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +184,8 @@
     <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First Commit postgres" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Commit postgres" />
+    <MESSAGE value="Avance equipment entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Avance equipment entity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

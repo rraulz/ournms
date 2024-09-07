@@ -9,7 +9,7 @@ namespace ournms.Controllers;
 public class Test(AppDbContext context) : Controller
 {
     [HttpGet]
-    public async Task<ActionResult<bool>>  Index()
+    public async Task<ActionResult<bool>> Index()
     {
         try
         {

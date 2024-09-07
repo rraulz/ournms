@@ -1,23 +1,27 @@
-using System.Configuration;
 using Microsoft.EntityFrameworkCore;
 using ournms.Persistence;
-
-
+using ournms.Repositories;
+using ournms.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(options =>
+    options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
+builder.Services.AddScoped(typeof(IReadRepository<>), typeof(EfRepository<>));
+builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
+
 var app = builder.Build();
 
 app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    "default",
+    "{controller=Home}/{action=Index}/{id?}");
 
 if (app.Environment.IsDevelopment())
 {
