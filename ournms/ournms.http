@@ -1,0 +1,14 @@
+@ournms_HostAddress = http://localhost:5009
+
+GET {{ournms_HostAddress}}/api/equipment
+Accept: application/json
+
+###
+
+POST {{ournms_HostAddress}}/API/Equipment
+Accept: application/json
+
+###
+
+GET {{ournms_HostAddress}}/Test
+Accept: application/json

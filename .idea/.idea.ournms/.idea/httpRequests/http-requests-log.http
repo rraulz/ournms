@@ -1,0 +1,138 @@
+GET http://localhost:5009/Test
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009/Test
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009/Test
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009/Test
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+<> 2024-06-29T110117.200.json
+
+###
+
+GET http://localhost:5009/api/Test
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009/api/test
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009/api/equipment
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009/API/Equipment
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+POST http://localhost:5009/API/Equipment
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+POST http://localhost:5009/API/EquipmentController
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+POST http://localhost:5009/API/EquipmentController
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+POST http://localhost:5009/API/EquipmentController
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+POST http://localhost:5009/API
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+POST http://localhost:5009
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
+GET http://localhost:5009/weatherforecast/
+Accept: application/json
+User-Agent: IntelliJ HTTP Client/JetBrains Rider 2024.1.4
+Accept-Encoding: br, deflate, gzip, x-gzip
+content-length: 0
+
+###
+
