@@ -17,6 +17,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddScoped(typeof(IReadRepository<>), typeof(EfRepository<>));
 builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
 
+builder.Services.AddScoped(typeof(FastRepository<>));  
+
 var app = builder.Build();
 
 app.MapControllerRoute(
