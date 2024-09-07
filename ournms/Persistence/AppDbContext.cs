@@ -9,7 +9,7 @@ namespace ournms.Persistence
         {
         }
 
-        public DbSet<Equipment> Equipment { get; set; }
+        public DbSet<Equipment> EquipmentItems { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

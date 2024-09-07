@@ -10,153 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="74745e69-eda6-4b19-96ae-719425ac176b" name="Changes" comment="First Commit postgres">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ournms/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ournms/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ournms/Controllers/EquipmentController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Controllers/EquipmentController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/Controllers/Test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Controllers/Test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/Migrations/20240706105057_AddEquipment.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/Migrations/20240706105057_AddEquipment.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/Model/Equipment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Model/Equipment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/Persistence/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Persistence/AppDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/EntityFramework.SqlServer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/EntityFramework.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Humanizer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.AspNetCore.OpenApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.Bcl.AsyncInterfaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.CodeAnalysis.CSharp.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.CodeAnalysis.Workspaces.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.CodeAnalysis.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.Extensions.DependencyModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.OpenApi.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Mono.TextTemplating.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Npgsql.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.CodeDom.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Composition.AttributedModel.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Composition.Convention.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Composition.Hosting.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Composition.Runtime.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Composition.TypedParts.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Security.Permissions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/System.Windows.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/appsettings.Development.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/appsettings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/cs/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/de/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/es/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/fr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/it/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ja/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ko/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ournms" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ournms.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ournms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ournms.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ournms.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pl/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/pt-BR/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/ru/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/unix/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win-arm64/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win-x64/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win-x86/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win/lib/net6.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win/lib/net6.0/System.Windows.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.AssemblyInfoInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.MvcApplicationPartsAssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.csproj.AssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.csproj.Up2Date" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.genruntimeconfig.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ournms.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/ref/ournms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/refint/ournms.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/staticwebassets.build.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/staticwebassets/msbuild.build.ournms.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ournms.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ournms.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/ournms.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/ournms.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/ournms.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/ournms.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/ournms.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/ournms.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/ournms.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ournms/ournms.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/ournms/Migrations/20240706104944_Initial.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/ournms/Migrations/20240706104944_Initial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ournms/ournms/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +145,7 @@
       <workItem from="1720261782011" duration="311000" />
       <workItem from="1720262802127" duration="1277000" />
       <workItem from="1723571482941" duration="1220000" />
-      <workItem from="1725697745365" duration="3436000" />
+      <workItem from="1725697745365" duration="4821000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit postgres">
       <option name="closed" value="true" />

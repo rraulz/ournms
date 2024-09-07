@@ -1,8 +1,9 @@
 using System.Data.Entity;
-using System.Security.Cryptography;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ournms.Model;
 using ournms.Persistence;
+using EntityState = Microsoft.EntityFrameworkCore.EntityState;
 
 namespace ournms.Controllers;
 
@@ -11,18 +12,88 @@ namespace ournms.Controllers;
 public class EquipmentController(AppDbContext context) : Controller
 {
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<Equipment>>> GetEquipmentEntity()
+    public async Task<ActionResult<IEnumerable<Equipment>>> GetAllEquipment()
     {
-        return await context.Equipment.ToListAsync();
+        return await context.EquipmentItems.ToListAsync();
     }
     
+    [HttpGet("{id:long}")]
+    public async Task<ActionResult<Equipment>> GetEquipment(long id)
+    {
+        var equipmentItem = await context.EquipmentItems.FindAsync(id);
+
+        if(equipmentItem == null)
+        {
+            return NotFound();
+        }
+
+        return equipmentItem;
+    }
     
     [HttpPost]
-    public async Task<Boolean> CreateEquipment()
+    public async Task<ActionResult<Equipment>> PostEquipment(Equipment equipmentItem)
     {
-        Equipment equipment = new(RandomNumberGenerator.GetInt32(0, 10000), "Equipo mandarina", RandomNumberGenerator.GetInt32(0, 10000).ToString());
-        context.Equipment.Add(equipment);
+        context.EquipmentItems.Add(equipmentItem);
         await context.SaveChangesAsync();
-        return true;
+
+        return CreatedAtAction(nameof(GetEquipment), new { id = equipmentItem.Id }, equipmentItem);
     }
+    
+    [HttpPut("{id:long}")]
+    public async Task<IActionResult> PutEquipment(long id, Equipment equipmentItem)
+    {
+        if(id != equipmentItem.Id)
+        {
+            return BadRequest();
+        }
+
+        context.Entry(equipmentItem).State = EntityState.Modified;
+
+        try
+        {
+            await context.SaveChangesAsync();
+        }
+        catch(DbUpdateConcurrencyException)
+        {
+            if(!EquipmentExists(id))
+            {
+                return NotFound();
+            }
+            else
+            {
+                throw;
+            }
+        }
+
+        return NoContent();
+    }
+    
+    [HttpDelete("{id:long}")]
+    public async Task<IActionResult> DeleteEquipment(long id)
+    {
+        var equipmentItem = await context.EquipmentItems.FindAsync(id);
+        if(equipmentItem == null)
+        {
+            return NotFound();
+        }
+
+        context.EquipmentItems.Remove(equipmentItem);
+        await context.SaveChangesAsync();
+
+        return NoContent();
+    }
+
+    private bool EquipmentExists(long id)
+    {
+        return context.EquipmentItems.Any(e => e.Id == id);
+    }
+    
+    // [HttpPost]
+    // public async Task<Boolean> CreateEquipment()
+    // {
+    //     Equipment equipment = new(RandomNumberGenerator.GetInt32(0, 10000), "Equipo mandarina", RandomNumberGenerator.GetInt32(0, 10000).ToString());
+    //     context.Equipment.Add(equipment);
+    //     await context.SaveChangesAsync();
+    //     return true;
+    // }
 }
