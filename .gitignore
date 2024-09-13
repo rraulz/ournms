@@ -1,3 +1,5 @@
 ournms/bin/
 ournms/obj/
+ournms_snmp/bin/
+ournms_snmp/obj/
 .idea/

@@ -10,18 +10,14 @@ var configuration = builder.Configuration;
 
 builder.Services.AddDbContextPool<AppDbContext>(options =>
     options.UseSqlite(configuration.GetConnectionString("DefaultConnection")));
-SQLitePCL.Batteries.Init();
-SQLitePCL.raw.sqlite3_config(SQLitePCL.raw.SQLITE_CONFIG_MULTITHREAD);
 
 builder.Services.AddControllers();
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-builder.Services.AddScoped(typeof(IReadRepository<>), typeof(EfRepository<>));
-builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>));
-
+builder.Services.AddScoped(typeof(IReadRepository<>), typeof(EfRepository<>)); //Ardalis
+builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>)); //Ardalis
 builder.Services.AddScoped(typeof(FastRepository<>));  
 
 builder.Services.AddScoped<ISnmpService, SnmpService>();  

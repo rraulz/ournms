@@ -28,4 +28,8 @@
       <ProjectReference Include="..\ournms_snmp\ournms_snmp.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Migrations\" />
+    </ItemGroup>
+
 </Project>

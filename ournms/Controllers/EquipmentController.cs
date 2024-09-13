@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ournms.Entites;
+using ournms.Entities;
 using ournms.Persistence;
 using ournms.Repositories.Interfaces;
 using EntityState = Microsoft.EntityFrameworkCore.EntityState;
