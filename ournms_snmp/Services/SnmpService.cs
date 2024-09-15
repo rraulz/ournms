@@ -15,10 +15,10 @@ public class SnmpService : ISnmpService
     }
     
     
-    public static async Task DiscoverAsync()
+    private static async Task DiscoverAsync()
     {
 
-        Discoverer discoverer = new Discoverer();
+        var discoverer = new Discoverer();
         discoverer.AgentFound += DiscovererAgentFound;
         Console.WriteLine("v1 discovery");
         await discoverer.DiscoverAsync(VersionCode.V1, new IPEndPoint(IPAddress.Broadcast, 161), new OctetString("public"), 6000);
@@ -28,7 +28,7 @@ public class SnmpService : ISnmpService
         await discoverer.DiscoverAsync(VersionCode.V3, new IPEndPoint(IPAddress.Broadcast, 161), null, 6000);
     }
 
-    static void DiscovererAgentFound(object sender, AgentFoundEventArgs e)
+    private static void DiscovererAgentFound(object? sender, AgentFoundEventArgs e)
     {
         Console.WriteLine("{0} announces {1}", e.Agent, (e.Variable == null ? "it supports v3" : e.Variable.Data.ToString()));
     }

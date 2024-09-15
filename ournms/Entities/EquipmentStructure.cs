@@ -1,9 +1,19 @@
-using ournms.Entites;
+using System.ComponentModel.DataAnnotations;
 
 namespace ournms.Entities;
 
-public class EquipmentStructure : BaseEntity
+public class EquipmentStructure() : BaseEntity
 {
-    public int EquipmentId { get; set; }
-    public Equipment Equipment { get; set; }
+    public EquipmentStructure(int id, Equipment equipment) : this()
+    {
+        Id = id;
+        EquipmentId = equipment.Id;
+        Equipment = equipment;
+    }
+    
+    [Required] 
+    public required int EquipmentId { get; init; } 
+    
+    [Required] 
+    public required Equipment Equipment { get; init; } 
 }

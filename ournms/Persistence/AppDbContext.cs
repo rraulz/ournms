@@ -1,19 +1,14 @@
 using Microsoft.EntityFrameworkCore;
-using ournms.Entites;
 using ournms.Entities;
 
 namespace ournms.Persistence;
 
-public class AppDbContext : DbContext
+public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
-    {
-    }
-
-    public DbSet<Equipment> EquipmentItems { get; set; }
-    public DbSet<SnmpAccessData> SnmpAccessDataItems { get; set; }
-    public DbSet<EquipmentStructure> EquipmentStructureItems { get; set; }
-    public DbSet<Interface> Interfaces { get; set; }
+    public DbSet<Equipment> EquipmentItems { get; init; }
+    public DbSet<SnmpAccessData> SnmpAccessDataItems { get; init; }
+    public DbSet<EquipmentStructure> EquipmentStructureItems { get; init; }
+    public DbSet<Interface> Interfaces { get; init; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

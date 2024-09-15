@@ -1,6 +1,9 @@
-namespace ournms.Entites;
+using System.ComponentModel.DataAnnotations;
+
+namespace ournms.Entities;
 
 public class BaseEntity
 {
-    public int Id { get; set; }
+    [Key] 
+    public required int Id { get; set; }
 }

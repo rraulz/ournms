@@ -16,9 +16,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped(typeof(IReadRepository<>), typeof(EfRepository<>)); //Ardalis
-builder.Services.AddScoped(typeof(IRepository<>), typeof(EfRepository<>)); //Ardalis
-builder.Services.AddScoped(typeof(FastRepository<>));  
+builder.Services.AddScoped(typeof(IReadRepositoryArd<>), typeof(OurRepository<>)); //Ardalis
+builder.Services.AddScoped(typeof(IRepositoryArd<>), typeof(OurRepository<>)); //Ardalis
+builder.Services.AddScoped(typeof(OurRepository<>));  
 
 builder.Services.AddScoped<ISnmpService, SnmpService>();  
 

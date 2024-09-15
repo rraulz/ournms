@@ -1,31 +1,27 @@
-using System.Runtime.InteropServices.JavaScript;
-using Ardalis.Specification;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using ournms_snmp.Services.Interface;
-using ournms.Entites;
 using ournms.Entities;
-using ournms.Persistence;
-using ournms.Repositories.Interfaces;
+using ournms.Repositories;
 
 namespace ournms.Controllers;
 
 [Route("api/test")]
 [ApiController]
-public class TestController(FastRepository<Equipment> equipmentRepository, ISnmpService snmpService) : Controller
+public class TestController(OurRepository<Equipment> equipmentRepository, ISnmpService snmpService) : Controller
 {
     [HttpGet( "{number:int}")]
     public async Task<ActionResult<bool>> TestMethod(int number)
     {
-        List<Equipment> equipmentsToAdd = new();
+        List<Equipment> equipmentsToAdd = [];
 
-        for (int i = 0; i < number; i++)
+        for (var i = 0; i < number; i++)
         {
-            equipmentsToAdd.Add(new Equipment("Test", "127.0.0.1"));
+            // equipmentsToAdd.Add(new Equipment(1, "127.0.0.1", "", null));
         }
         
-        await equipmentRepository.AddRangeAsync(equipmentsToAdd);
-
+        await equipmentRepository.AddRangeBulksAsync(equipmentsToAdd);
+        
+        
         return true;
     }
     

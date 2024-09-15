@@ -1,23 +1,22 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ournms.Entites;
 using ournms.Entities;
 using ournms.Persistence;
-using ournms.Repositories.Interfaces;
+using ournms.Repositories;
 using EntityState = Microsoft.EntityFrameworkCore.EntityState;
 
 namespace ournms.Controllers;
 
 [Route("api/equipment")]
 [ApiController]
-public class EquipmentController(AppDbContext context, IRepository<Equipment> equipmentRepository) : Controller
+public class EquipmentController(AppDbContext context, OurRepository<Equipment> equipmentRepositoryArd) : Controller
 {
     [HttpGet]
     public async Task<ActionResult<IEnumerable<Equipment>>> GetAllEquipment()
     {
         //return await context.EquipmentItems.ToListAsync();
 
-        return await equipmentRepository.ListAsync();
+        return await equipmentRepositoryArd.ListAsync();
     }
 
     [HttpGet("{id:long}")]
